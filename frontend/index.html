@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise Dashboard</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<div id="centrebar"></div>
+<hr>
+
+<div class="parent">
+<!-- LEFT: ADD EXERCISE -->
+<div class="left">
+    <h3>Add Exercise</h3>
+    <form class = "form">
+    <input id="name" placeholder="Exercise Name"><br><br>
+    <input id="muscle" placeholder="Muscle Group"><br><br>
+    <input id="specific" placeholder="Specific Muscle"><br><br>
+    <input id="reps" type="number" placeholder="Reps"><br><br>
+    <input id="sets" type="number" placeholder="Sets"><br><br>
+    <button onclick="addExercise()">Add</button>
+    </form>
+</div>
+
+<!-- MIDDLE: LIST -->
+<div class="middle">
+    <h3 style="text-align:center;">Exercises</h3>
+    <div id="list"></div>
+</div>
+
+<!-- RIGHT: MODIFY -->
+<div class="right">
+    <h3>Modify Exercise</h3>
+    <form class = "form">
+    <input id="modId" placeholder="ID"><br><br>
+    <input id="modMuscle_group" placeholder="Muscle Group"><br><br>
+    <input id="modSpecific_muscle" placeholder="Specific Muscle"><br><br>
+    <input id="modName_of_exercise" placeholder="Exercise Name"><br><br>
+    <input id="modReps" placeholder="No. of Reps"><br><br>
+    <input id="modSets" placeholder="No. of Sets"><br><br>
+    <button onclick="modifyExercise()">Update</button>
+    </form>
+</div>
+</div>
+<script src="js/auth.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+

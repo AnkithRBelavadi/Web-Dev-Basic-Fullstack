@@ -1,0 +1,9 @@
+function checkLogin() {
+    let user = localStorage.getItem("user");
+
+    if (!user) {
+        window.location.href = "login.html";
+    }
+}
+
+checkLogin();

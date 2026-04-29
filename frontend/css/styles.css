@@ -1,0 +1,62 @@
+.parent {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    height: auto;
+}
+#centrebar{
+    width: 100%;
+    height: auto;
+}
+/* LEFT PANEL */
+.left {
+    width: 20%;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+/* MIDDLE PANEL */
+.middle {
+    width: 60%;
+    background: #fff;
+    overflow-y: scroll;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/* RIGHT PANEL */
+.right {
+    width: 20%;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+button {
+    align-self: center;
+    width: auto;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input{
+    text-align: center;
+}
