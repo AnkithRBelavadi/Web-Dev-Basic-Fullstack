@@ -71,13 +71,21 @@ async function deleteExercise(id){
     loadExercises();
     
 }
+
+async function logout(){
+    alert("You have been logged out, Login Again to view");
+    localStorage.removeItem('user');
+    window.location.href="index.html"
+
+}
 // INITIAL LOAD
 
 async function loadHeader(){
     const header = document.getElementById("centrebar")
     let name = localStorage.getItem("user")
     name = name.toUpperCase()
-    header.innerHTML+=`<h1> <center>WELCOME ${name} </center> </h1>`
+    header.innerHTML+=`<h1> WELCOME ${name} </h1> 
+    <button onclick="logout()" id="logout">Logout</button>`
 }
 loadHeader();
 loadExercises();

@@ -5,8 +5,21 @@
     height: auto;
 }
 #centrebar{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     height: auto;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+
+#logout{
+    margin-top: 0%;
+    position: absolute;
+    right: 50px;
 }
 /* LEFT PANEL */
 .left {
